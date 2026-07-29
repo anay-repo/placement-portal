@@ -15,7 +15,8 @@ def create_app():
     
     app.config.from_object(Config)
 
-    CORS(app, supports_credentials=True)
+    frontend_origin = os.environ.get("FRONTEND_ORIGIN", "http://localhost:8080")
+    CORS(app, supports_credentials=True, origins=[frontend_origin])
 
     os.makedirs(app.config["UPLOAD_FOLDER"], exist_ok=True)
 
@@ -58,9 +59,11 @@ def create_admin():
     if existing_admin:
         return
 
+    admin_email = os.environ.get("ADMIN_EMAIL", "admin@example.com")
+    admin_password = os.environ.get("ADMIN_PASSWORD", "changeme123")
     admin = User(
-        email    = "23f3000736@ds.study.iitm.ac.in",
-        password = generate_password_hash("admin123"),
+        email    = admin_email,
+        password = generate_password_hash(admin_password),
         role     = "admin"
     )
     db.session.add(admin)
