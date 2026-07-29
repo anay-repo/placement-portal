@@ -136,4 +136,4 @@ On first run, a default admin account is created using the `ADMIN_EMAIL` / `ADMI
 
 ## 📬 Contact
 
-Built by **Anay** — feel free to reach out on [LinkedIn] or open an issue if you spot something!
+Built by **Anay** — feel free to reach out on (https://www.linkedin.com/in/anay-singh-6a21402a8) or open an issue if you spot something!
