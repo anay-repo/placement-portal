@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Placement Portal</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet"/>
+
+  <style>
+    body { background-color: #f8f9fa; }
+    .sidebar {
+      min-height: 100vh;
+      background: #1e3a5f;
+      color: white;
+      padding-top: 20px;
+    }
+    .sidebar a {
+      color: #adc8e6;
+      text-decoration: none;
+      display: block;
+      padding: 10px 20px;
+      border-radius: 6px;
+      margin: 2px 8px;
+    }
+    .sidebar a:hover, .sidebar a.active {
+      background: #2e5f9e;
+      color: white;
+    }
+    .sidebar .brand {
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: white;
+      padding: 10px 20px 20px;
+      border-bottom: 1px solid #2e5f9e;
+      margin-bottom: 10px;
+    }
+    .main-content { padding: 30px; }
+    .stat-card {
+      border-radius: 12px;
+      padding: 20px;
+      color: white;
+      margin-bottom: 20px;
+    }
+    .stat-card h2 { font-size: 2.5rem; font-weight: bold; }
+    .badge-pending  { background:#ffc107; color:#000; }
+    .badge-approved { background:#198754; color:#fff; }
+    .badge-rejected { background:#dc3545; color:#fff; }
+    .badge-closed   { background:#6c757d; color:#fff; }
+    .badge-applied      { background:#0dcaf0; color:#000; }
+    .badge-shortlisted  { background:#0d6efd; color:#fff; }
+    .badge-selected     { background:#198754; color:#fff; }
+    .nav-tabs .nav-link.active { font-weight:600; }
+  </style>
+</head>
+<body>
+  <div id="app"></div>
+
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  
+  <script src="https://unpkg.com/vue-router@4/dist/vue-router.global.js"></script>
+  
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script src="src/components/Login.js"></script>
+  <script src="src/components/Register.js"></script>
+  <script src="src/components/AdminDash.js?v=20260407"></script>
+  <script src="src/components/CompanyDash.js"></script>
+  <script src="src/components/StudentDash.js?v=20260407"></script>
+  <script src="src/router.js"></script>
+  <script src="src/main.js"></script>
+</body>
+</html>

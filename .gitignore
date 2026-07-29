@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+venv/
+.venv/
+
+# Env / secrets
+.env
+*.env
+!.env.example
+
+# Databases
+*.db
+*.sqlite3
+
+# Celery / Redis runtime files
+celerybeat-schedule*
+dump.rdb
+*.log
+
+# Uploads (runtime user data, not source)
+backend/app/uploads/*
+!backend/app/uploads/.gitkeep
+
+# Node / frontend
+frontend/node_modules/
+frontend/dist/
+
+# OS/editor
+.DS_Store
+.vscode/
